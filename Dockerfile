@@ -8,4 +8,4 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 ENTRYPOINT ["python"]
 
-CMD ["/app/app.py"]
+CMD ["/app/app1.py"]
