@@ -1,0 +1,16 @@
+name: MY TEST
+on: [push]
+jobs:
+  build_model:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Train the model
+      id: model
+      uses: dassrihari/TESTMYCODE@main
+      with:
+        myInput: "[5.1,3.5,1.4,0.2]"
+    - name: Upload model.pkl 
+      uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: model.pkl
