@@ -13,6 +13,7 @@ def main():
     data = pd.read_csv(dataset_path)
     print(type(data))
     print(data.head())
+    data = data.drop(['Id'], axis = 1)
     #print(data.describe())
 
     x=data.iloc[:,:-1]
