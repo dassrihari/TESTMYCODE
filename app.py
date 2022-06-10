@@ -12,7 +12,7 @@ def main():
     dataset_path = "https://raw.githubusercontent.com/" + os.environ["GITHUB_REPOSITORY"] +"/main/dataset.csv"
     data = pd.read_csv(dataset_path)
     print(type(data))
-    print(df.head())
+    print(data.head())
     print(data.describe())
 
     x=data.iloc[:,:-1]
