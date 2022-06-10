@@ -13,7 +13,7 @@ def main():
     data = pd.read_csv(dataset_path)
     print(type(data))
     print(data.head())
-    print(data.describe())
+    #print(data.describe())
 
     x=data.iloc[:,:-1]
     y=data.iloc[:,-1]
