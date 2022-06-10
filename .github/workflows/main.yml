@@ -1,4 +1,4 @@
-name: Iris Dataset Classifier
+name: MY TEST
 on: [push]
 jobs:
   build_model:
